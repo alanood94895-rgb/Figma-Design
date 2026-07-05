@@ -1,0 +1,97 @@
+.shop-hero {
+    padding: var(--gap-xl) var(--gap-md);
+    text-align: center;
+    color: #fff;
+    margin-bottom: var(--gap-xl);
+}
+.shop-hero-content { max-width: 600px; }
+.shop-hero-content h1 { font-size: 3rem; color: #fff; }
+.shop-hero-content p { color: #e2e8f0; }
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: var(--gap-md);
+    margin-top: var(--gap-lg);
+}
+.product-card {
+    background: var(--clr-surface);
+    border-radius: 8px;
+    padding: var(--gap-sm);
+    text-align: left;
+}
+.product-info {
+    margin-top: var(--gap-sm);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price { font-weight: 700; color: var(--clr-text-dark); }
+
+
+.product-detail-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--gap-xl);
+    padding: var(--gap-xl) 0;
+}
+.detail-actions-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.detail-price { font-size: 2rem; margin: var(--gap-sm) 0; }
+.btn-wide { width: 100%; max-width: 320px; }
+
+
+.article-container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: var(--gap-xl) var(--gap-md);
+}
+.post-header h1 { font-size: 2.75rem; line-height: 1.2; }
+.article-media-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap-md);
+    margin: var(--gap-lg) 0;
+}
+
+.about-hero-block {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--gap-xl);
+    padding: var(--gap-xl) 0;
+    align-items: center;
+}
+.about-avatar-wrapper { text-align: center; }
+.avatar-asset { max-width: 280px; width: 100%; height: auto; }
+
+.contact-form-section {
+    max-width: 600px;
+    margin: var(--gap-xl) auto;
+    background: var(--clr-surface);
+    padding: var(--gap-lg);
+    border-radius: 8px;
+}
+.contact-form { display: flex; flex-direction: column; gap: var(--gap-md); }
+.form-group { display: flex; flex-direction: column; gap: 6px; }
+.form-group label { font-size: 0.85rem; font-weight: 600; }
+.form-group input, .form-group textarea {
+    padding: 12px;
+    border: 1px solid var(--clr-border);
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 100%;
+}
+.form-row-twin {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--gap-md);
+}
+
+@media (min-width: 1024px) {
+    .product-detail-layout { grid-template-columns: 1.2fr 1fr; }
+    .about-hero-block { grid-template-columns: 1.2fr 0.8fr; }
+    .form-row-twin { grid-template-columns: 1fr 1fr; }
+}
