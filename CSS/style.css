@@ -512,14 +512,40 @@
 .footer-socials {
     padding: 30px 0;
     display: flex;
-    gap: 16px;
+    gap: 12px;
 }
 
 .footer-socials a {
-    color: var(--color-text-footer);
-    font-size: 1.1rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-gray-light);
+    border-radius: 8px;
     text-decoration: none;
-    opacity: 0.50;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.footer-socials a img,
+.footer-socials a svg,
+.footer-socials a i {
+    width: 18px;
+    height: 18px;
+    font-size: 18px;
+    color: var(--color-dark);
+}
+
+.footer-socials a:hover {
+    background-color: var(--color-dark);
+}
+
+.footer-socials a:hover img,
+.footer-socials a:hover svg,
+.footer-socials a:hover i {
+    color: var(--color-light);
+    filter: brightness(0) invert(1);
 }
 
 .footer-column {
